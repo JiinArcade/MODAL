@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>modal 창 만들기</title>
+  <link rel="stylesheet" href="./style.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://kit.fontawesome.com/ce0de73234.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="wrapper">
+    <button type="button" id="open-btn">모달열기</button>
+    <div class="img-list">
+      <img src="./images/고양이2.jpg" alt="img1">
+      <img src="./images/고양이3.jpg" alt="img2">
+      <img src="./images/고양이4.jpg" alt="img3">
+      <img src="./images/고양이5.JPG" alt="img4">
+      <img src="./images/고양이6.JPG" alt="img5">
+    </div>
+
+    <div id="img-modal">
+      <div id="img-modal-box">
+        <button type="button" id="img-modal-btn" class="close-btn">
+          <i class="fa-regular fa-circle-xmark"></i>
+        </button>
+        <div id="img-wrapper">
+          <img src="./images/고양이2.jpg" alt="img1">
+        </div>
+      </div>
+    </div>
+
+    <div id="modal">
+      <div id="modal-box">
+        <div id="modal-head">
+          <span>모달 타이틀</span>
+          <button type="button" id="modal-close" class="close-btn">
+            <i class="fa-regular fa-circle-xmark"></i>
+          </button>
+        </div>
+        <div id="modal-sec">
+          <img src="./images/고양이3.jpg" alt="modal-sec-img">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur atque accusamus quam at modi architecto, tempora deleniti consequatur aperiam enim, sit, placeat quae facere optio magni laborum blanditiis repellat mollitia?
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur atque accusamus quam at modi architecto, tempora deleniti consequatur aperiam enim, sit, placeat quae facere optio magni laborum blanditiis repellat mollitia?
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur atque accusamus quam at modi architecto, tempora deleniti consequatur aperiam enim, sit, placeat quae facere optio magni laborum blanditiis repellat mollitia?
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="./js/js.js"></script>
+</body>
+</html>
